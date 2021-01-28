@@ -15,6 +15,9 @@ public class PdftoexcelApplication {
         ConfigurableApplicationContext configurableApplicationContext = new SpringApplicationBuilder(PdftoexcelApplication.class).headless(false).run(args);
         CreateWindow createWindow = (CreateWindow)configurableApplicationContext.getBean("createWindowImpl");
         createWindow.create();
+
+
+
     }
 
 }
